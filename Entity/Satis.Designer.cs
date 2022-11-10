@@ -53,14 +53,14 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(330, 154);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 69;
-            this.label6.Text = "Kategori";
+            this.label6.Text = "Müşteri";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(429, 151);
+            this.comboBox1.Location = new System.Drawing.Point(429, 109);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 68;
@@ -90,6 +90,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(642, 194);
             this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // button3
             // 
@@ -99,6 +100,7 @@
             this.button3.TabIndex = 60;
             this.button3.Text = "SİL";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -108,6 +110,7 @@
             this.button2.TabIndex = 59;
             this.button2.Text = "GÜNCELLE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -117,6 +120,7 @@
             this.button1.TabIndex = 58;
             this.button1.Text = "EKLE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -172,7 +176,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(429, 107);
+            this.comboBox2.Location = new System.Drawing.Point(429, 157);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(100, 21);
             this.comboBox2.TabIndex = 71;
@@ -218,6 +222,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Satis";
             this.Text = "Satis";
+            this.Load += new System.EventHandler(this.Satis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

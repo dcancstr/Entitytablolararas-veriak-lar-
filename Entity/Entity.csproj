@@ -129,11 +129,13 @@
     <Compile Include="tbl_urun.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ürün.cs">
+    <Compile Include="..\..\..\..\Desktop\ürün.cs">
       <SubType>Form</SubType>
+      <Link>ürün.cs</Link>
     </Compile>
-    <Compile Include="ürün.Designer.cs">
+    <Compile Include="..\..\..\..\Desktop\ürün.Designer.cs">
       <DependentUpon>ürün.cs</DependentUpon>
+      <Link>ürün.Designer.cs</Link>
     </Compile>
     <EmbeddedResource Include="Bilgi.resx">
       <DependentUpon>Bilgi.cs</DependentUpon>
@@ -165,8 +167,9 @@
     <EmbeddedResource Include="Satis.resx">
       <DependentUpon>Satis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ürün.resx">
+    <EmbeddedResource Include="..\..\..\..\Desktop\ürün.resx">
       <DependentUpon>ürün.cs</DependentUpon>
+      <Link>ürün.resx</Link>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
